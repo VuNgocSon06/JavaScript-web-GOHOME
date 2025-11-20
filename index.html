@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUGAR Real Estate</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<button id="backToTop" class="btn btn-primary" style="position: fixed; bottom: 40px; right: 40px; display:none; z-index:1000;">↑ Top</button>
+
+<header class="hero-section">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-dark" href="#">LUGAR</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-dark" href="#">HOME</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#projects">PROJECT</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#contact">CONTACT</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn btn-sm btn-outline-dark ms-3">Dark</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-content text-center">
+    <h1 class="display-4 fw-bold">A home is built with love and dreams</h1>
+    <p class="lead">Real estate form that makes your dreams true</p>
+    <div class="mt-4">
+      <a href="#projects" class="btn btn-primary me-3">Our projects</a>
+      <a href="#contact" class="btn btn-outline-dark">Contact us</a>
+    </div>
+  </div>
+</header>
+<section class="award-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="building.jpg" alt="Building" class="img-fluid rounded shadow">
+        <p class="mt-3 text-muted">Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque.</p>
+      </div>
+      <div class="col-md-6 text-md-start text-center">
+        <h2 class="fw-bold mb-4">Award winning real estate company in Dubai</h2>
+        <div class="row">
+          <div class="col-4">
+            <h3 class="text-primary fw-bold">34+</h3>
+            <p class="text-muted small">PREVIOUS PROJECTS</p>
+          </div>
+          <div class="col-4">
+            <h3 class="text-primary fw-bold">20y</h3>
+            <p class="text-muted small">YEARS EXPERIENCE</p>
+          </div>
+          <div class="col-4">
+            <h3 class="text-primary fw-bold">12</h3>
+            <p class="text-muted small">ONGOING PROJECTS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="projects" class="bg-white py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap">
+      <div>
+        <h2 class="mb-0">Ongoing projects</h2>
+        <p class="text-muted">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+      </div>
+      <div class="d-flex mt-2 mt-md-0">
+        <input type="text" id="searchInput" class="form-control me-2" placeholder="Search projects...">
+        <select id="filterType" class="form-select">
+          <option value="">All Types</option>
+          <option value="Villa">Villa</option>
+          <option value="Penthouse">Penthouse</option>
+          <option value="Smart City">Smart City</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm" data-name="Vintage Villa" data-type="Villa" data-address="123 Main St, Dubai">
+                <img src="villa1.jpg" class="card-img-top" alt="Vintage Villa">
+                <div class="card-body">
+                  <h5 class="card-title">Vintage Villa</h5>
+                  <p class="card-text text-muted">123 Main St, Dubai</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm view-details">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm" data-name="Tongo Villa" data-type="Villa" data-address="3015 Themington St, Dhaka">
+                <img src="villa2.jpg" class="card-img-top" alt="Tongo Villa">
+                <div class="card-body">
+                  <h5 class="card-title">Tongo Villa</h5>
+                  <p class="card-text text-muted">3015 Themington St, Dhaka</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm view-details">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm" data-name="Penthouse" data-type="Penthouse" data-address="2464 Royal Ln, Mesa">
+                <img src="penthouse.jpg" class="card-img-top" alt="Penthouse">
+                <div class="card-body">
+                  <h5 class="card-title">Penthouse</h5>
+                  <p class="card-text text-muted">2464 Royal Ln, Mesa</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm view-details">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm" data-name="Smart City Project" data-type="Smart City" data-address="2715 Ash Dr, San Jose, Dubai">
+                <img src="smartcity.jpg" class="card-img-top" alt="Smart City Project">
+                <div class="card-body">
+                  <h5 class="card-title">Smart City Project</h5>
+                  <p class="card-text text-muted">2715 Ash Dr, San Jose, Dubai</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm view-details">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+</div>
+<section id="testimonial" class="testimonial-section py-5">
+  <div class="container text-center">
+    <h2 class="mb-5 fw-bold">What Our Clients Say</h2>
+    <div class="testimonial-carousel">
+      <div class="card shadow-sm p-4 d-flex flex-column flex-md-row align-items-center fade-in">
+        <img src="2.jpg" alt="Brooklyn Simmons" class="testimonial-img mb-3 mb-md-0 me-md-3">
+        <div class="testimonial-text text-md-start">
+          <p class="lead fst-italic">"Dream house isn't dream anymore. Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar."</p>
+          <h5 class="fw-bold mb-0">Brooklyn Simmons</h5>
+          <small class="text-muted">Artist</small>
+        </div>
+      </div>
+      <div class="card shadow-sm p-4 d-flex flex-column flex-md-row align-items-center fade-in">
+        <img src="4.jpg" alt="Alexandra Lee" class="testimonial-img mb-3 mb-md-0 me-md-3">
+        <div class="testimonial-text text-md-start">
+          <p class="lead fst-italic">"Home is a place to come back to, nothing is more precious than your home"</p>
+          <h5 class="fw-bold mb-0">Cristiano Ronaldo</h5>
+          <small class="text-muted">Athlete</small>
+        </div>
+      </div>
+      <div class="card shadow-sm p-4 d-flex flex-column flex-md-row align-items-center fade-in">
+        <img src="1.jpg" alt="Alexandra Lee" class="testimonial-img mb-3 mb-md-0 me-md-3">
+        <div class="testimonial-text text-md-start">
+          <p class="lead fst-italic">"We found the perfect home thanks to Lugar Real Estate. Professional and caring team."</p>
+          <h5 class="fw-bold mb-0">Alexandra Lee</h5>
+          <small class="text-muted">Entrepreneur</small>
+        </div>
+      </div>
+      <div class="card shadow-sm p-4 d-flex flex-column flex-md-row align-items-center fade-in">
+        <img src="3.jpg" alt="John Doe" class="testimonial-img mb-3 mb-md-0 me-md-3">
+        <div class="testimonial-text text-md-start">
+          <p class="lead fst-italic">"Excellent service and beautiful properties. Highly recommend!"</p>
+          <h5 class="fw-bold mb-0">John Doe</h5>
+          <small class="text-muted">Investor</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="position-relative overflow-hidden rounded shadow">
+          <img src="house-contact.jpg" alt="House" class="img-fluid">
+          <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center p-3" style="background: rgba(0,0,0,0.4);">
+            <h4>Find your dream home</h4>
+            <p>We provide personalized assistance for every project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-4">Get in touch</h2>
+        <form id="contact-form">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control" placeholder="First name" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control" placeholder="Last name" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email address" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Phone number" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          <small class="text-muted d-block text-center mt-2">We don't sell your email and spam.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-dark text-white pt-5 shpb-3">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="mb-3">LUGAR</h5>
+        <ul class="list-unstyled">
+          <li>2118 Thornridge Cir</li>
+          <li>Dubai, UAE 35624</li>
+          <li>+33 415 65356 - 9</li>
+          <li>contact@lugar.com</li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <h5 class="mb-3">QUICK LINKS</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Terms</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Conditions</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contract</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <h5 class="mb-3">LEGAL LINKS</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Terms</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Conditions</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <h5 class="mb-3">SOCIAL MEDIA</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Twitter</a></li>
+          <li><a href="#" class="text-white text-decoration-none">YouTube</a></li>
+          <li><a href="#" class="text-white text-decoration-none">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-light mt-4">
+    <p class="text-center mb-0">
+      Copyright © <span id="year"></span> Lugar Inc.
+    </p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
